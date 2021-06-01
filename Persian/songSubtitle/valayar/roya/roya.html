@@ -1,0 +1,135 @@
+<html>
+  <!-- search TODO -->
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+  <!-- TODO: singer Name - song Name -->
+  <title>Valayar - roya</title>
+  <style>
+    body {
+      counter-reset: p;
+    }
+
+    .persian {
+      font-family: 'Amiri', serif;
+      font-size: 36px;
+      padding-left: 60px;
+      border-bottom: 1px solid lime;
+      position: relative;
+    }
+    .translate{
+      font-family: 'Amiri', serif;
+      font-size: 20px;
+      color: red;
+      padding: 0px 20px;
+    }
+    .persian::before {
+      content: counter(p)".";
+      position: absolute;
+      counter-increment: p;
+      left: 0;
+      top: 0;
+    }
+
+    * {
+      background-color: black;
+      color: lime;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body style="margin: 0px;">
+  <div style="display: flex;align-items: center;justify-content: center;height: 20vh;">
+     <!-- TODO: singer Name - song Name -->
+    <h1>Valayar - roya</h1>
+     <!-- TODO: song path -->
+    <audio id="player" style="width: 70%;margin-left: 20px;" src="./valayar-roya.mp3" controls></audio>
+  </div>
+  <div style="height: 50px;">
+    <button onclick="document.getElementById('player').play()">Play</button>
+    <button onclick="document.getElementById('player').pause()">Pause</button>
+    <button onclick="document.getElementById('player').volume += 0.1">Vol +</button>
+    <button onclick="document.getElementById('player').volume -= 0.1">Vol -</button>
+    <button onclick="document.getElementById('player').playbackRate += 0.1">Speed +</button>
+    <button onclick="document.getElementById('player').playbackRate -= 0.1">Speed -</button>
+    <button onclick="document.getElementById('player').currentTime += 1">Forward 1s</button>
+    <button onclick="document.getElementById('player').currentTime -= 2">Backward 1s</button>
+  </div>
+  <!-- TODO: lyrics and translation -->
+  <div style="overflow-y: scroll;height: 70vh;">
+<p class="persian">از خواب برگشتم به تنهایی </p>
+<p class="translate"> Röyamdan tənhalığa döndüm </p>
+<p class="persian">پل میزنم از تو به زیبایی </p>
+<p class="translate">   Körpü qurdum səninlə gözəlliklər arasında   </p>
+<p class="persian">چشمامو میبندمو میبینم </p>
+<p class="translate">     artıq gözlərimi bağlıyanda da görürəm  </p>
+<p class="persian">دنیا رو با چشم تو میبینم </p>
+<p class="translate">    Dünyaya sənin gözlərinlə baxıram  </p>
+<p class="persian">دنیای من با عشق درگیره </p>
+<p class="translate">    Mənim dünyam eşqə aludədir.   </p>
+<p class="persian">عشقی که تو نباشی میمیره </p>
+<p class="translate">    İçində sən olmayanda ölür bu eşq  </p>
+<p class="persian">عشقی که تو دست تو گل داده </p>
+<p class="translate">    Sənin əllərinə gülü verən eşq  </p>
+<p class="persian">عشقی که به دست من افتاده </p>
+<p class="translate">  Düşdü mənim əllərimə...    </p>
+<p class="persian">تو مثل من رویاتو میبافی </p>
+<p class="translate">    Sən də mənim kimi xəyallar qurursan  </p>
+<p class="persian">با دست من موهاتو میبافی </p>
+<p class="translate">    Mənim əllərimlə saçlarını hörürsən  </p>
+<p class="persian">خورشیدو با چشمات روشن کن </p>
+<p class="translate">    Günəşi gözlərinlə işıqlandır  </p>
+<p class="persian">یکبار ماهو قسمت من کن </p>
+<p class="translate">     Bircə dəfə Ayı mənə bəxş et </p>
+<p class="persian">تو مثل من رویاتو میبافی </p>
+<p class="translate">      </p>
+<p class="persian">با دست من موهاتو میبافی </p>
+<p class="translate">      </p>
+<p class="persian">خورشیدو با چشمات روشن کن </p>
+<p class="translate">      </p>
+<p class="persian">یکبار ماهو قسمت من کن </p>
+<p class="translate">      </p>
+<p class="persian">من پشت این پنجره میشینم </p>
+<p class="translate">   Mən bu pəncərənin arxasında otururam   </p>
+<p class="persian">بارونو تو چشم تو میبینم </p>
+<p class="translate">    Gözlərindəki yağmuru görürəm  </p>
+<p class="persian">عیبی نداره چشمتو وا کن </p>
+<p class="translate">    Eybi yoxdur, aç gözlərini  </p>
+<p class="persian">عیبی نداره باز غمگینم </p>
+<p class="translate">     Eybi yoxdur qəmlənsəm də.... </p>
+<p class="persian">بازی نکن با قلب داغونم </p>
+<p class="translate">    Oyun oynama mənim yaralı qəlbimlə  </p>
+<p class="persian">من آخر بازی رو میدونم </p>
+<p class="translate">     Mən bu oyunun sonunu bilirəm </p>
+<p class="persian">حیفه بخوایم از هم جدا باشیم </p>
+<p class="translate">    Heyifdir ayrı qalmaq, heyif...  </p>
+<p class="persian">من خیلی وقته با تو هم خونم</p>
+<p class="translate">     Mən uzun zamandır səninlə eyni evdəyəm.... </p>
+<p class="persian">تو مثل من رویاتو میبافی </p>
+<p class="translate">      </p>
+<p class="persian">با دست من موهاتو میبافی </p>
+<p class="translate">      </p>
+<p class="persian">خورشیدو با چشمات روشن کن </p>
+<p class="translate">      </p>
+<p class="persian">یکبار ماهو قسمت من کن </p>
+<p class="translate">      </p>
+<p class="persian">من پشت این پنجره میشینم </p>
+<p class="translate">      </p>
+<p class="persian">بارونو تو چشم تو میبینم </p>
+<p class="translate">      </p>
+<p class="persian">عیبی نداره چشمتو وا کن </p>
+<p class="translate">      </p>
+<p class="persian">عیبی نداره باز غمگینم </p>
+<p class="translate">      </p>
+<p class="persian">بازی نکن با قلب داغونم </p>
+<p class="translate">      </p>
+<p class="persian">من آخر بازی رو میدونم </p>
+<p class="translate">      </p>
+<p class="persian">حیفه بخوایم از هم جدا باشیم </p>
+<p class="translate">      </p>
+<p class="persian">من خیلی وقته با تو هم خونم</p>
+  </div>
+</body>
+
+</html>
